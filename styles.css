@@ -1,11 +1,19 @@
 /* GLOBAL */
+html{
+  font-size: 10px;
+  /* må stå px for den bestemme relasjonen med em og rem */
+}
+/* Standard size er 16px font size. 16px er det samme som 1em, men nå er det blitt 10px pga det ovenfor  */
 body {
   margin: 0;
+    /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
+  font-size: 1.6rem;  /* (16px) */
+
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;/* (200px) */
+  height: 20rem;/* (200px) */
   background-color: black;
 }
 
@@ -19,14 +27,17 @@ img {
 .navList {
   display: flex;
   padding: 0;
+    /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   margin: 0;
-  gap: 16px;
+    /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
+  gap: 1.6rem;/* (16px) */
   list-style-type: none;
 }
 /* MAIN */
 /* Hero */
 .hero {
-  height: 100vh;
+  height: 100dvh;
+  /* dvh er dynamic view height, funker bedre for laptop og mobil/nettbrett skjermer enn bare vh(fast view height) */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +48,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;/* (16px) */
 }
 
 .heroText {
@@ -54,7 +65,7 @@ img {
 
 /* About */
 .about {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +81,7 @@ img {
 }
 
 .aboutText {
-  width: 300px;
+  width: 30rem;
 }
 
 .aboutImg {
@@ -78,39 +89,42 @@ img {
 }
 
 .aboutImgText {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-style: italic;
   margin: 6px;
+    /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
 }
 
 /* Projects */
 .projects {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .projectsList {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
   list-style-type: none;
   padding: 0;
+    /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
 }
 
 .projectCard {
-  height: 400px;
-  width: 300px;
+  /* height: 40rem;kort bruker ofte en absolutt px størrelse istedet for rem */
+  width: 30rem;
   border: 2px solid black;
+  /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
   text-align: center;
 }
 
@@ -118,6 +132,6 @@ img {
 .footer {
   display: flex;
   justify-content: center;
-  font-family: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
 }

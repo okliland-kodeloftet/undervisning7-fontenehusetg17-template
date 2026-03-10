@@ -1,0 +1,123 @@
+/* GLOBAL */
+body {
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+  list-style-type: none;
+}
+/* MAIN */
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroImg {
+  width: 100%;
+}
+
+/* About */
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutTextContainer,
+.aboutImgContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutText {
+  width: 300px;
+}
+
+.aboutImg {
+  width: 100%;
+}
+
+.aboutImgText {
+  font-size: 12px;
+  font-style: italic;
+  margin: 6px;
+}
+
+/* Projects */
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.projectsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.projectCard {
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  font-family: 32px;
+  font-weight: bold;
+}

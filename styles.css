@@ -8,7 +8,7 @@ body {
   margin: 0;
     /* border, padding og margin er en av de få stedene der en bruker px for estetisk endring */
   font-size: 1.6rem;  /* (16px) */
-
+  padding: 1.6rem;
 }
 
 img {
@@ -148,11 +148,25 @@ img {
 /* MEDIA QUERY(betingelser på hvordan ting skal skje hvis skjermen er anderledes(f.eks på mobil) */
 @media (max-width: 426px){
   /* max-width på 426px fordi det er max bredde på normal mobil */
+
+  .headerNav{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
   .heroIntro{
   flex-direction: column;}
 
   .navList{
     display: none;
+  }
+
+  .navHamburgerList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
   }
 
   .hamburgerIcon{
